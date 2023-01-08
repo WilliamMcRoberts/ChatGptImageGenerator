@@ -1,2 +1,2 @@
 # ChatGptImageGenerator
-Sample MVC ChatGPT image request generator.
+Sample ChatGPT image request generator built with .NET MVC.
