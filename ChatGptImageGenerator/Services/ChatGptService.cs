@@ -12,7 +12,7 @@ namespace ChatGptImageGenerator.Services
             {
                 using var httpReq = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/images/generations");
 
-                var apiKey = "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";
+                var apiKey = "<YourApiKey>";
 
                 httpReq.Headers.Add("Authorization", $"Bearer {apiKey}");
                 var reqContent = JsonConvert.SerializeObject(imageRequest);
