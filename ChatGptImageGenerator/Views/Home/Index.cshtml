@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Chat GPT Image Service</h1>
+    <p>Fill in the form to request images from ChatGPT</a>.</p>
+</div>
+
+<div>
+    <form method="post" action="/home/chatgpt" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="Prompt" style="width: 154px">Prompt</label>
+            <input type="text" id="Prompt" name="Prompt" style="width: 400px" />
+        </div>
+        <br />
+        <div>
+            <label for="TotalImages" style="width: 154px">Total Images</label>
+            <input type="text" id="TotalImages" name="TotalImages" style="width: 400px" />
+        </div>
+        <br />
+        <div>
+            <label for="Size" style="width: 154px">Size</label>
+            <input type="text" id="Size" name="Size" style="width: 400px" />
+        </div>
+        <br />
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>

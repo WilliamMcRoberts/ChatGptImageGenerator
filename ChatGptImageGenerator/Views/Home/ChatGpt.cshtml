@@ -1,0 +1,20 @@
+﻿@model ImageResponse
+@{
+    ViewData["Title"] = "Chat Gpt Response";
+}
+
+<p>
+    <h2>Chat GPT Image Response</h2>
+</p>
+<br />
+
+@if(Model?.Data is not null)
+{
+    foreach(var item in Model.Data)
+    {
+        <p>
+            <div>@item.Url</div>
+            <div><img src="@item.Url" /></div>
+        </p>
+    }
+}
